@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>RandomString-20221211-221757</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.2, OS=Windows 11 (10.0.22623.1028)
+11th Gen Intel Core i5-1135G7 2.40GHz, 1 CPU, 8 logical and 4 physical cores
+.NET SDK=7.0.100
+  [Host]     : .NET 7.0.0 (7.0.22.51805), X64 RyuJIT AVX2
+  DefaultJob : .NET 7.0.0 (7.0.22.51805), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>                   Method</th><th>  Mean</th><th> Error</th><th> StdDev</th><th>Gen0</th><th>Gen1</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>GenerateUsingRandom</td><td>577.8 ns</td><td>22.82 ns</td><td>65.11 ns</td><td>0.2680</td><td>-</td><td>1.09 KB</td>
+</tr><tr><td>RandomStringGeneratorUsingBogus</td><td>982,124.8 ns</td><td>40,466.34 ns</td><td>116,105.53 ns</td><td>128.9063</td><td>115.2344</td><td>764.41 KB</td>
+</tr></tbody></table>
+</body>
+</html>

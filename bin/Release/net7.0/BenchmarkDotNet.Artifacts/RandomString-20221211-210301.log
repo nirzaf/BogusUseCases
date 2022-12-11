@@ -1,0 +1,3 @@
+// Validating benchmarks:
+Benchmarked method `RandomStringGenerator` is static. Benchmarks MUST be instance methods, static methods are not supported.
+Benchmarked method `RandomStringGeneratorUsingBogus` is static. Benchmarks MUST be instance methods, static methods are not supported.
